@@ -1,0 +1,166 @@
+<div class="container">
+    <p class="blog-info__excerpt">Todas las opciones son buenas, pero solo una es la solución perfecta,  la que mejor se adecua a sus percepciones y necesidades particulares . Te ayudamos a descubrirla</p>
+    <div class="blog-info">
+        <h2 class="blog-info__title"> <a href="blog-post.html">Sondeo de Necesidades</a></h2>
+    </div>  
+    <h3>Preferencias de Usuarios</h3>
+    <form action="">
+    <!-- Primera Pregunta -->
+      
+      <p class=" contact__desc">¿Quiere renovar su vehículo o es su primera compra?</p>
+      <div class="custom-controls-stacked d-block my-3">
+        <label class="custom-control custom-radio">
+          <input id="radioStacked1" name="radio-stacked" type="radio" class="custom-control-input" required>
+          <span class="custom-control-indicator"></span>
+          <span class="custom-control-description contact__desc">Renovar</span>
+        </label>
+        <label class="custom-control custom-radio">
+          <input id="radioStacked2" name="radio-stacked" type="radio" class="custom-control-input" required>
+          <span class="custom-control-indicator"></span>
+          <span class="custom-control-description contact__desc">Es mi primera Compra</span>
+        </label>
+      </div>
+      <!-- Segunda Pregunta -->
+      <div class="row form-group">
+        <div class="col-sm-12">
+          <p class=" contact__desc">¿Qué clase de Auto tiene Actualmente?</p>
+        </div>
+      </div>  
+      <div class="row">
+        <div class="col-sm-6 col-md-2">
+          <label class="text-center col-3 col-md-12" for="car-years">Año</label>
+          <select class="col-8 col-md-12" name="car-years" id="car-years" ></select>  
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <label class="text-center col-3 col-md-12" for="car-makes">Marca</label>
+          <select class="col-8 col-md-12" name="car-makes" id="car-makes" ></select> 
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <label class="text-center col-3 col-md-12 " for="car-models">Modelo</label>
+          <select class="col-8 col-md-12" name="car-models" id="car-models" ></select>  
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <label class="text-center col-3 col-md-12" for="car-model-trims">Tipo</label>
+          <select class="col-8 col-md-12" name="car-model-trims" id="car-model-trims" ></select>  
+        </div>  
+      </div>
+      <br>
+      <!-- Tercera Pregunta -->
+      <div class="row">
+        <div class="col-sm-12">
+          <p class=" contact__desc">¿Cuál es el atributo que mas le gusta de su auto Actual?</p>
+        </div>      
+        <div class="col-12 col-md-12 ">
+          <mat-button-toggle-group  [vertical]='true' [name]='cosa' >
+            <mat-button-toggle value="7" name='caracteristicasSi' >
+                Bajo consumo <br> de combustible
+            </mat-button-toggle>
+            <mat-button-toggle value="5" name='caracteristicasSi' >
+              Exclusividad
+            </mat-button-toggle>
+            <mat-button-toggle value="6" name='caracteristicasSi' >
+              Bajo Precio 
+            </mat-button-toggle>
+            <mat-button-toggle value="4" name='caracteristicasSi' >
+              Seguridad
+            </mat-button-toggle>
+            <mat-button-toggle value="1" name='caracteristicasSi' >
+                Muy Comercial
+            </mat-button-toggle>
+          </mat-button-toggle-group>
+          <mat-button-toggle-group  [vertical]='true'>
+        
+            <mat-button-toggle value="10" name='caracteristicasSi' >
+              Confiabilidad <br> mecánica
+            </mat-button-toggle>
+            <mat-button-toggle value="9" name='caracteristicasSi' >
+              Confort
+            </mat-button-toggle>
+            <mat-button-toggle value="3" name='caracteristicasSi' >
+              Tecnología
+            </mat-button-toggle>
+            <mat-button-toggle value="8" name='caracteristicasSi' >
+              Diseño
+            </mat-button-toggle>
+            <mat-button-toggle value="2" name='caracteristicasSi' >
+              Tradición Marca
+            </mat-button-toggle>
+          </mat-button-toggle-group>
+        </div>
+      </div>
+      <br>
+      <!-- Cuarta Pregunta -->
+      <div class="row">
+          <div class="col-sm-12">
+            <p class=" contact__desc">¿Cuál es el atributo que mas le desagrada de su auto Actual?</p>
+          </div>      
+          <div class="col-12 col-md-12 ">
+            <mat-button-toggle-group  [vertical]='true' >
+              <mat-button-toggle value="7" name='caracteristicasNo' >
+                  Bajo consumo <br> de combustible
+              </mat-button-toggle>
+              <mat-button-toggle value="5" name='caracteristicasNo' >
+                Exclusividad
+              </mat-button-toggle>
+              <mat-button-toggle value="6" name='caracteristicasNo' >
+                Bajo Precio 
+              </mat-button-toggle>
+              <mat-button-toggle value="4" name='caracteristicasNo' >
+                Seguridad
+              </mat-button-toggle>
+              <mat-button-toggle value="1" name='caracteristicasNo' >
+                  Muy Comercial
+              </mat-button-toggle>
+            </mat-button-toggle-group>
+            <mat-button-toggle-group  [vertical]='true'>
+          
+              <mat-button-toggle value="10" name='caracteristicasNo' >
+                Confiabilidad <br> mecánica
+              </mat-button-toggle>
+              <mat-button-toggle value="9" name='caracteristicasNo' >
+                Confort
+              </mat-button-toggle>
+              <mat-button-toggle value="3" name='caracteristicasNo' >
+                Tecnología
+              </mat-button-toggle>
+              <mat-button-toggle value="8" name='caracteristicasNo' >
+                Diseño
+              </mat-button-toggle>
+              <mat-button-toggle value="2" name='caracteristicasNo' >
+                Tradición Marca
+              </mat-button-toggle>
+            </mat-button-toggle-group>
+          </div>
+        </div>
+      <!-- Quinta Pregunta -->
+      <br>
+      <p class=" contact__desc">Desea un vehículo similar, o le gustaria probar otro tipo de vahículo</p>
+      <div class="custom-controls-stacked d-block my-3">
+        <label class="custom-control custom-radio">
+          <input id="radioStacked1" name="radio-stacked" type="radio" class="custom-control-input" required>
+          <span class="custom-control-indicator"></span>
+          <span class="custom-control-description contact__desc">Similar</span>
+        </label>
+        <label class="custom-control custom-radio">
+          <input id="radioStacked2" name="radio-stacked" type="radio" class="custom-control-input" required>
+          <span class="custom-control-indicator"></span>
+          <span class="custom-control-description contact__desc">Otro tipo</span>
+        </label>
+      </div>
+      <div class="">
+          <p class=" contact__desc">Selecciones el tipo de vehículo y luego el tamaño que más se adecua a sus necesidades</p>
+          <owl-carousel
+          [options]="{items: 4,dots:true }"
+          [items]="images"
+          [carouselClasses]="['owl-theme', 'row', 'sliding']"
+          >
+            <div class="item " *ngFor="let image of images;let i = index">
+                <img class="marca-carro" [src]="image.url" alt="">
+            </div>    
+          </owl-carousel>          
+      </div>
+    </form>  
+</div>
+
+
+

@@ -1,0 +1,139 @@
+@mixin background-cover { 
+    background-size: 100%;
+}
+
+  // Styling for the navbar
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$primary: #fed136 !default;
+
+
+  
+  // Font Mixins
+  @mixin serif-font {
+    font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  @mixin script-font {
+    font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+  }
+  @mixin body-font {
+    font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  @mixin heading-font {
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+.a{
+  // background: url(../../../../assets/images/logo.jpg) no-repeat scroll center center / 80px 80px;
+  background-color: #000;
+  background-image: url();
+}
+.marca-carro{
+  
+  height: 120px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+.image-header{
+  margin-top: 80px;
+}
+header.masthead {
+    text-align: center;
+    color: white;
+    // background-image: url('../../../../assets/images/header.jpg');
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    
+    @include background-cover;
+    .intro-text {
+      padding-top: 150px;
+      padding-bottom: 100px;
+      .intro-lead-in {
+        font-size: 22px;
+        font-style: italic;
+        line-height: 22px;
+        margin-bottom: 25px;
+
+      }
+      .intro-heading {
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 50px;
+        margin-bottom: 25px;
+        @include heading-font;
+      }
+    }
+  }
+  @media(min-width:768px) {
+    header.masthead {
+      .intro-text {
+        padding-top: 5px;
+        padding-bottom: 20px;
+        .intro-lead-in {
+          font-size: 40px;
+          font-style: italic;
+          line-height: 40px;
+          margin-bottom: 25px;
+          @include serif-font;
+        }
+        .intro-heading {
+          font-size: 75px;
+          font-weight: 700;
+          line-height: 75px;
+          margin-bottom: 50px;
+          @include heading-font;
+        }
+      }
+    }
+  }
+
+  @import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+
+
+.boton-encuesta {
+  width: 10vw;
+  height: 4vw;
+  position: absolute;
+  left: 10vw;
+  top: 20vh;
+  transform: translate(-50%,-80%);
+  
+  font-family: 'Varela Round', sans-serif;
+  font-size: 2vw;
+  letter-spacing: 0.1em;
+  color: #e8e8e8;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background: linear-gradient(45deg,#F63439,#0070B9,#0070B9);
+  background-size: 400% 400%;
+  box-shadow: 1vw 1vw 0 lightcoral;
+  
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    animation: gradient 10s ease infinite;
+    font-size: 2.05vw;
+    box-shadow: 0.2vw 0.2vw 0 lightcoral;
+  }
+}
+
+@keyframes gradient {
+  50% {
+    background-position: 100% 0;
+  }
+}  

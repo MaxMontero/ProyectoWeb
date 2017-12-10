@@ -1,0 +1,63 @@
+header.masthead {
+    text-align: center;
+    color: white;
+    // background-image: url('../../../../assets/images/header.jpg');
+    background-color: #202020;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 10rem;
+    .image-header{
+       margin-top: 1rem; 
+    }
+
+    .intro-text {
+      padding-top: 150px;
+      padding-bottom: 100px;
+      .intro-lead-in {
+        font-size: 22px;
+        font-style: italic;
+        line-height: 22px;
+        margin-bottom: 25px;
+
+      }
+      .intro-heading {
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 50px;
+        margin-bottom: 25px;
+
+      }
+    }
+  }
+  @media(min-width:768px) {
+    header.masthead {
+      .intro-text {
+        padding-top: 5px;
+        padding-bottom: 20px;
+        .intro-lead-in {
+          font-size: 40px;
+          font-style: italic;
+          line-height: 40px;
+          margin-bottom: 25px;
+
+        }
+        .intro-heading {
+          font-size: 75px;
+          font-weight: 700;
+          line-height: 75px;
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+
+  .marca-carro{
+    margin-top: 2rem;
+    height: 120px;
+    width: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+  }
+
+  

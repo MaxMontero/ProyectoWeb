@@ -1,0 +1,37 @@
+<header class="masthead">
+<div class="container">
+    <img class="image-header" src="../../../../assets/images/logo.png" alt="100px" height="120px">
+    <!-- <button class="boton-encuesta">Quiero</button> -->
+    <div class="intro-text">
+      <div class=""></div>
+      <div class="intro-lead-in">
+        <!-- <p>Ahora es fácil conocer cuál es su auto ideal </p> -->
+        
+      </div>
+      <!-- <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Como lograrlo</a> -->
+    </div>
+  </div>
+
+  
+</header>
+<div class="blog-info">
+    <h2 class="blog-info__title"> <a href="blog-post.html">Ahora es fácil conocer cuál es</a></h2>
+    <h5 class="blog-info__title"> <a href="blog-post.html" class="ae-u-bolder">SU AUTO IDEAL </a></h5>
+    <p class="blog-info__excerpt"> A demás podrás  recibir ofertas,  descuentos y mucho más.*
+        Llenando  el cuestionario de nuestra App  Web y Móvil, recibirás en forma instantánea  la mejor propuesta, la que se adapta mejor a sus percepciones y necesidades particulares, 5 minutos que le ahorran horas de averiguaciones y transportes innecesarios.</p>
+</div>
+<owl-carousel
+  [options]="{items: 5,autoplay:true,dots:false ,autoplayTimeout:2000, loop:true, responsiveClass:true, center:true
+  , responsive:{
+    '0':{items:1},
+    '600':{items:3},
+    '1000':{items:5}
+  } }"
+  [items]="images"
+  [carouselClasses]="['owl-theme', 'row', 'sliding']"
+  #owlElement (click)="prueba()">
+    <div class="item " *ngFor="let image of images;let i = index">
+        <div class="marca-carro col-md-12 col-sm-12 offset-2  " [ngStyle]="{'background-image': 'url(' + image.url + ') ' }">
+        </div>
+    </div>    
+  </owl-carousel>
